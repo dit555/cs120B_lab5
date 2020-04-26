@@ -25,6 +25,10 @@ int main(void) {
     while (1) {
 	a = ~PINA;
 	sum = 0x00;
+	if ( a >= 16){
+		a = a << 4;
+		a = a >> 4;
+	}
 	if ( a == 1 || a == 2)
 		sum = 0x20;
 	
