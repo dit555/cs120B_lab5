@@ -7,6 +7,7 @@
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
  *
+ * 	Note: I used PORTB for the demo
  *	Demo link:
  *	https://youtu.be/awxfjo5OVqI
  */
@@ -17,8 +18,7 @@
 
 int main(void) {
     DDRA = 0x00; PORTA = 0xFF;
-    DDRB = 0xFF; PORTB = 0x00;
-    //DDRC = 0x00; PORTC = 0x00;
+    DDRC = 0xFF; PORTC = 0x00;
     unsigned char sum = 0x00;
     unsigned char a = 0x00;
     //unsigned char c = 0x00;
@@ -45,7 +45,7 @@ int main(void) {
 
 	if ( a <= 4)
 		sum = sum | 0x40;
-	PORTB = sum;
+	PORTC = sum;
     }
     return 1;
 }

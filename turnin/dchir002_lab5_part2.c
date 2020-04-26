@@ -20,7 +20,7 @@ enum State { Start, Wait, Inc, Inc2, Dec, Dec2, Reset, Reset2} state;
 	
 void Tick(){
 	unsigned char temp = ~PINA;
-	unsigned char temp2 = PORTB;
+	unsigned char temp2 = PORTC;
 	switch(state){ //transitions
 		case Start: temp2 = 0x00; state = Wait; break;
 		case Wait: 
@@ -56,12 +56,12 @@ void Tick(){
 		default: break;
 
 	}
-	PORTB = temp2;
+	PORTC = temp2;
 }
 
 int main(void) {
 	DDRA = 0x00; PORTA = 0xFF;
-	DDRB = 0xFF; PORTB = 0x00;
+	DDRC = 0xFF; PORTC = 0x00;
 		
     	while (1) {
 		Tick();
