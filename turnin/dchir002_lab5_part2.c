@@ -6,6 +6,10 @@
  *
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
+ *
+ *	Note: I used PORTB instead of C so I did not have to rearange my stuff
+ *	Demo link:
+ *	https://youtu.be/awxfjo5OVqI?t=193
  */
 #include <avr/io.h>
 #ifdef _SIMULATE_
