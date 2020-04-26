@@ -1,11 +1,14 @@
-/*	Author: Dumitru Chiriac lab 4
+/*	Author: Dumitru Chiriac lab 5
  *  Partner(s) Name: 
  *	Lab Section:
- *	Assignment: Lab # 4 Exercise # 1
+ *	Assignment: Lab # 4 Exercise # 3
  *	Exercise Description: [optional - include for your own benefit]
  *
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
+ *	
+ * 	Demo link:
+ *	https://youtu.be/awxfjo5OVqI?t=339
  */
 #include <avr/io.h>
 #ifdef _SIMULATE_
